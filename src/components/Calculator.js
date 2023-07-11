@@ -1,4 +1,5 @@
 import React from 'react';
+import Operator from './Operations';
 
 function Calculator() {
   const assignValue = (text) => (
@@ -8,9 +9,8 @@ function Calculator() {
     <div className="container">
       <div className="calculator">
         <form>
-          <div className="rowValue topinp">
-            <input className="input-value" type="text" placeholder="0" />
-          </div>
+
+          <Operator />
 
           <div className="rowValue">
             {assignValue('AC')}
