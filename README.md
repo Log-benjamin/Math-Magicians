@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <h2><b>Math Magicians</b></h2>
+  <img  src='./public/icon.png' width="100px">
+  <h1><b>Math Magicians</b></h1>
   
   <!-- <br> -->
 
@@ -16,7 +16,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
