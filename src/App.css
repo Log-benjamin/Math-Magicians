@@ -89,12 +89,25 @@ body {
 }
 
 .quoteContainer p {
-  font-size: 20px;
+  font-size: 25px;
   font-family: cursive, sans-serif;
 }
 
 .Aname {
   text-align: right;
+}
+
+.load {
+  width: 100%;
+  text-align: center;
+}
+
+.load p {
+  font-size: 30px;
+}
+
+.loading {
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {

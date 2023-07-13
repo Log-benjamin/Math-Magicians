@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Quotes = () => {
   const [data, setData] = useState('');
   const [name, setName] = useState('');
+  const [loading, setLoad] = useState(true);
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -16,18 +17,27 @@ const Quotes = () => {
             },
           });
         const quoteObj = await quote.json();
+        setLoad(false);
         setName(quoteObj[0].author);
         setData(quoteObj[0].quote);
       } catch (error) {
         setError(error.message);
+        setLoad(false);
       }
     };
     fetchQuote();
   }, [setData, setError]);
 
+  if (loading) {
+    return (
+      <div className="quoteContainer load">
+        <p className="loading">Loading...</p>
+      </div>
+    );
+  }
   return (
     <div className="quoteContainer">
-      { data ? <p className="quote">{data}</p> : <p>Loading...</p> }
+      <p className="quote">{data}</p>
       <p className="Aname">{name}</p>
       { error && <p>{error}</p> }
     </div>
