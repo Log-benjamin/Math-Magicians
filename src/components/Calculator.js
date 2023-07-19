@@ -16,6 +16,7 @@ function Calculator() {
 
   return (
     <div className="container">
+      <h2 className="letsdoMath">Let&apos;s do some Math!</h2>
       <div className="calculator">
         <form>
 

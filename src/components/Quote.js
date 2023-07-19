@@ -16,10 +16,10 @@ const Quotes = () => {
               'X-Api-Key': 'd12DxoYT5lp6hsXZtNLNoA==jugmWIPVRJFM8Iwd',
             },
           });
-        const quoteObj = await quote.json();
+        const data = await quote.json();
         setLoad(false);
-        setName(quoteObj[0].author);
-        setData(quoteObj[0].quote);
+        setName(data[0].author);
+        setData(data[0].quote);
       } catch (error) {
         setError(error.message);
         setLoad(false);
