@@ -20,7 +20,7 @@ function Calculator() {
       <div className="calculator">
         <form>
 
-          <div className="rowValue topinp">
+          <div className="topinp">
             <input className="input-value" type="text" value={display} />
           </div>
 

@@ -22,8 +22,3 @@ function App() {
 }
 
 export default App;
-
-// <div className="App">
-// <Calculator />
-// <Quotes />
-// </div>
